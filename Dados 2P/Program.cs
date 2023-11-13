@@ -1,86 +1,184 @@
 ﻿
-//Metodo sem uso de classes.
-//Ficou uma bagunça.
+//Metodo Com uso de classes.
 
-class RolarDado
+
+public class RolarDado
 {
-    static void Main(string[] args)
+    Random r=new Random();
+    
+    private int Rounds {get;set;}
+    private int CondicaoEspecial {get;set;}
+    public string? NomePLayer1 { get; set; }
+    public string? NomePLayer2 { get; set; }
+
+      int P1NumeroDoDado;
+      int P2NumeroDoDado;
+
+        int PlacarP1=0;
+        int PlacarP2=0;
+
+    public void ValidacaoDeNome()
     {
-
-
-
-Console.Write("Digite o nome do jogador 1: ");
-        string? NomePLayer1= Console.ReadLine();
+        Console.Write("Digite o nome do jogador 1: ");
+        NomePLayer1= Console.ReadLine();
 
         Console.Write("\nDigite o nome do jogador 2: ");
-        string? NomePLayer2= Console.ReadLine();
+        NomePLayer2= Console.ReadLine();
 
 
-        while(NomePLayer1==NomePLayer2)
+        while(NomePLayer1!.Equals(NomePLayer2,StringComparison.OrdinalIgnoreCase))
         {
             Console.WriteLine("Digite um nome diferente para o segundo jogador.");
             NomePLayer2= Console.ReadLine();
         }
+    }
 
-        Random random=new Random();
 
-        int P1G;
-        int P2G;
-        int Rounds=0;
+    public void SelecaoDeRounds()
+    {
+        Console.Write("\nDigite o Número de Rounds\nOpções: 3, 6 e 9.\nEscolha: ");
+        int a=Convert.ToInt32(Console.ReadLine());
 
-        int RP1=0;
-        int Rp2=0;
-
-        Console.WriteLine("O programa sorteará um numero aleatorio para cada jogador. Aquele que tiver 3 vitórias ganha.");
-        Console.WriteLine("Pressione qualquer tecla para começar.");
-        Console.ReadKey();
-        
-
-        while(Rounds<3)
+        switch(a)
         {
+            case 3:
+                Rounds=a;
+            break;
 
-           P1G= random.Next(1,6);
-           P2G=random.Next(1,6);
+             case 6:
+                Rounds=a;
+            break;
 
-           if(P1G>P2G)
-           {
-            Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1G}.\n{NomePLayer2} Tirou o número {P2G}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
-            RP1++;
-             Console.WriteLine($"PLacar atual:[{RP1}][{Rp2}]");
-             Console.WriteLine("Pressione qualquer tecla para continuar.");
-             Console.ReadKey();
-             Thread.Sleep(1000);
-           }
-           else if(P2G>P1G)
-           {
-             Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1G}.\n{NomePLayer2} Tirou o número {P2G}.\nPortanto o vencedor desse Round foi {NomePLayer2}.");
-             Rp2++;
-             Console.WriteLine($"PLacar atual:[{RP1}][{Rp2}]");
-             Console.WriteLine("Pressione qualquer tecla para continuar.");
-             Console.ReadKey();
-             Thread.Sleep(1000);
-           }
-           else{
-            Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1G}.\n{NomePLayer2} Tirou o número {P2G}.\nPortanto Round Empatado.");
-            Console.WriteLine("Pressione qualquer tecla para continuar.");
-            Console.ReadKey();
-            Thread.Sleep(1000);
-           }
+             case 9:
+                Rounds=a;
+            break;
 
-
-            if(Rp2==3){
-                Console.WriteLine($"\nParabéns {NomePLayer2}, vôce venceu!!.\nPlacar final[{RP1}]|[{Rp2}]");
+            default:
                 Rounds=3;
+            break;
+        }
+    }
+
+
+    public int JogoEmCondicaoNormal()
+    {   
+        while(Rounds>0)
+        {
+            P1NumeroDoDado=r.Next(1,6);
+            P2NumeroDoDado=r.Next(1,6);
+
+
+            if(P1NumeroDoDado>P2NumeroDoDado)
+            {
+                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
+                    PlacarP1++;
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
+            }
+            else if(P2NumeroDoDado>P1NumeroDoDado)
+            {
+                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer2}.");
+                    PlacarP2++;
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto, Round Empatado.");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
             }
 
-             if(RP1==3){
-                Console.WriteLine($"\nParabéns {NomePLayer1}, vôce venceu!!.\nPlacar final[{RP1}]|[{Rp2}]");
-                Rounds=3;
-            }
-           
 
+                Rounds--;
+
+               if(Rounds==0 & PlacarP1==PlacarP2)
+               {
+                CondicaoEspecial=1;
+               }
+
+               
+        }
+            return CondicaoEspecial;
+    }
+
+
+
+
+    public void Prorrogacao_E_Declaracao_De_Vitoria(int empate)
+    {
+        if(empate==1)
+        {   Console.WriteLine("O jogo proseguirá até seu desempate.");
+            while(PlacarP1==PlacarP2)
+            {
+                P1NumeroDoDado=r.Next(1,6);
+                P2NumeroDoDado=r.Next(1,6);
+
+                if(P1NumeroDoDado>P2NumeroDoDado)
+            {
+                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
+                    PlacarP1++;
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
+            }
+            else if(P2NumeroDoDado>P1NumeroDoDado)
+            {
+                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer2}.");
+                    PlacarP2++;
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto, Round Empatado.");
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadKey();
+            }
+
+            }
         }
 
+        else
+        {
+             if(PlacarP1>PlacarP2){
+                Console.WriteLine($"\nParabéns {NomePLayer1}, vôce venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
+                
+            }
+
+             else{
+                Console.WriteLine($"\nParabéns {NomePLayer2}, vôce venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
+                
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+class JogoDado
+{
+    static void Main(string[] args)
+    {
+
+        RolarDado game=new RolarDado();
+
+        game.ValidacaoDeNome();
+
+        game.SelecaoDeRounds();
+
+        int Auxiliar=game.JogoEmCondicaoNormal();
+
+        game.Prorrogacao_E_Declaracao_De_Vitoria(Auxiliar);
 
     }
 }
