@@ -28,7 +28,7 @@ public class RolarDado
 
         while(NomePLayer1!.Equals(NomePLayer2,StringComparison.OrdinalIgnoreCase))
         {
-            Console.WriteLine("Digite um nome diferente para o segundo jogador.");
+            Console.WriteLine("\nDigite um nome diferente para o segundo jogador.");
             NomePLayer2= Console.ReadLine();
         }
     }
@@ -43,31 +43,36 @@ public class RolarDado
         {
             case 3:
                 Rounds=a;
+                 Console.Write($"\nSerão jogados {a} Rounds.\nE em caso de empate Vem a prorrogação. ");
             break;
 
              case 6:
                 Rounds=a;
+                Console.Write($"\nSerão jogados {a} Rounds.\nE em caso de empate Vem a prorrogação. ");
             break;
 
              case 9:
                 Rounds=a;
+                Console.Write($"\nSerão jogados {a} Rounds.\nE em caso de empate Vem a prorrogação. ");
             break;
 
             default:
                 Rounds=3;
+                Console.Write("\nPor padrão serão jogados {Rounds} Rounds.\nE em caso de empate Vem a prorrogação. ");
             break;
         }
     }
 
 
     public int JogoEmCondicaoNormal()
-    {   
+    {   Console.Write("\nSerão Sorteados os números nos dados.\nQuem obtiver o maior número ganha aquele Round.\nPressione Qualquer Tecla Para começar.");
+     Console.ReadKey();
         while(Rounds>0)
         {
             P1NumeroDoDado=r.Next(1,6);
             P2NumeroDoDado=r.Next(1,6);
 
-
+            Console.WriteLine($"\nNúmero de Rounds restantes:[{Rounds}].");
             if(P1NumeroDoDado>P2NumeroDoDado)
             {
                  Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
