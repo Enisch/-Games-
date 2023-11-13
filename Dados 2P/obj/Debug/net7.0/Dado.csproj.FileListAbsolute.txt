@@ -1,1 +1,14 @@
 C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dado.exe
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dado.deps.json
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dado.runtimeconfig.json
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dado.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dado.pdb
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.AssemblyInfoInputs.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.AssemblyInfo.cs
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.csproj.CoreCompileInputs.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\refint\Dado.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.pdb
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dado.genruntimeconfig.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\ref\Dado.dll

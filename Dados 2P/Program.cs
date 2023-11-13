@@ -64,14 +64,14 @@ public class RolarDado
 
 
     public int JogoEmCondicaoNormal()
-    {   Console.Write("\nSerão Sorteados os números nos dados.\nQuem obtiver o maior número ganha aquele Round.\nPressione Qualquer Tecla Para começar.");
+    {   Console.WriteLine("\n\nSerão Sorteados os números nos dados.\nQuem obtiver o maior número ganha aquele Round.\nQuem possuir mais rounds ganhos ao término do jogo vence.\nPressione Qualquer Tecla Para começar.");
      Console.ReadKey();
         while(Rounds>0)
         {
             P1NumeroDoDado=r.Next(1,6);
             P2NumeroDoDado=r.Next(1,6);
 
-            Console.WriteLine($"\nNúmero de Rounds restantes:[{Rounds}].");
+           
             if(P1NumeroDoDado>P2NumeroDoDado)
             {
                  Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
@@ -95,7 +95,7 @@ public class RolarDado
                     Console.ReadKey();
             }
 
-
+                Console.WriteLine($"\nNúmero de Rounds restantes:[{Rounds-1}].\n");
                 Rounds--;
 
                if(Rounds==0 & PlacarP1==PlacarP2)
@@ -149,12 +149,12 @@ public class RolarDado
         else
         {
              if(PlacarP1>PlacarP2){
-                Console.WriteLine($"\nParabéns {NomePLayer1}, vôce venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
+                Console.WriteLine($"\nParabéns {NomePLayer1}, você venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
                 
             }
 
              else{
-                Console.WriteLine($"\nParabéns {NomePLayer2}, vôce venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
+                Console.WriteLine($"\nParabéns {NomePLayer2}, você venceu!!.\nPlacar final[{PlacarP1}]|[{PlacarP2}]");
                 
             }
         }
