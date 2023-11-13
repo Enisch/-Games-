@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dados 2P.csproj": {}
+    "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dados 2P.csproj": {
+    "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dados 2P.csproj",
-        "projectName": "Dados 2P",
-        "projectPath": "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dados 2P.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dado.csproj",
+        "projectName": "Dado",
+        "projectPath": "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\Dado.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\55119\\Videos\\''Jogos''\\Dados 2P\\obj\\",
         "projectStyle": "PackageReference",

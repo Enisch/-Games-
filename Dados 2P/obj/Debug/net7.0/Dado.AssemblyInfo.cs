@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Dados2P")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Dado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Dados2P")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Dados2P")]
+[assembly: System.Reflection.AssemblyProductAttribute("Dado")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Dado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

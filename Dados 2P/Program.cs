@@ -1,5 +1,4 @@
-﻿
-//Metodo Com uso de classes.
+﻿//Metodo Com uso de classes.
 
 
 public class RolarDado
@@ -182,7 +181,4 @@ class JogoDado
 
     }
 }
-
-
-
 
