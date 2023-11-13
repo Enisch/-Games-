@@ -1,5 +1,6 @@
 ﻿
-//Metodo sem uso de classes.Ficou
+//Metodo sem uso de classes.
+//Ficou uma bagunça.
 
 class RolarDado
 {
