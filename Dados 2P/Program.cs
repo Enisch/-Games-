@@ -114,7 +114,7 @@ public class RolarDado
     public void Prorrogacao_E_Declaracao_De_Vitoria(int empate)
     {
         if(empate==1)
-        {   Console.WriteLine("O jogo proseguirá até seu desempate.");
+        {   Console.WriteLine("O jogo PROSEGUIRÁ até seu DESEMPATE.");
             while(PlacarP1==PlacarP2)
             {
                 P1NumeroDoDado=r.Next(1,6);
@@ -122,7 +122,7 @@ public class RolarDado
 
                 if(P1NumeroDoDado>P2NumeroDoDado)
             {
-                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer1}.");
+                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o VENCEDOR foi {NomePLayer1}.");
                     PlacarP1++;
                     Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
@@ -130,7 +130,7 @@ public class RolarDado
             }
             else if(P2NumeroDoDado>P1NumeroDoDado)
             {
-                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o vencedor desse Round foi {NomePLayer2}.");
+                Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto o VENCEDOR foi {NomePLayer2}.");
                     PlacarP2++;
                     Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
