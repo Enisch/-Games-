@@ -1,0 +1,14 @@
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.AssemblyInfoInputs.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.AssemblyInfo.cs
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.csproj.CoreCompileInputs.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dados2P.exe
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dados2P.deps.json
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dados2P.runtimeconfig.json
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dados2P.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\bin\Debug\net7.0\Dados2P.pdb
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\refint\Dados2P.dll
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.pdb
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\Dados2P.genruntimeconfig.cache
+C:\Users\55119\Videos\''Jogos''\Dados 2P\obj\Debug\net7.0\ref\Dados2P.dll
