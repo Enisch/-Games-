@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uWZZxMRrKtJztTWEZ9SUvn1oaO1COHiMgLGfFATKcarRGzLTQZWV6vLXxdKz304KUy/38raXQkODnk6/p4jKIg==",
+  "dgSpecHash": "gLhDQvRQiRi8vOr12VDKrbRpjbtz5yiqxW9RKxi5ALKxhBZ9uSO+AZbroZNSjZMTqathYA3ftJt/Q+A8EY1Qmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Downloads\\Vscode projetos\\DotNetVSCode\\DESAFIOS_EXERCICIOS C#\\DESAFIOS_EXERCICIOS C#.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\55119\\Videos\\''Jogos''\\Jogo da velha\\DESAFIOS_EXERCICIOS C#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\55119\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\55119\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\55119\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

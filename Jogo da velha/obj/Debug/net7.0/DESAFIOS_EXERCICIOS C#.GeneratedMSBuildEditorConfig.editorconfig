@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DESAFIOS_EXERCICIOS_C_
-build_property.ProjectDir = C:\Users\55119\Downloads\Vscode projetos\DotNetVSCode\DESAFIOS_EXERCICIOS C#\
+build_property.ProjectDir = C:\Users\55119\Videos\''Jogos''\Jogo da velha\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -91,10 +91,11 @@ public class RolarDado
             else
             {
                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto, Round Empatado.");
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
                     Console.ReadKey();
             }
-
+                    Console.Clear();
                 Console.WriteLine($"\nNúmero de Rounds restantes:[{Rounds-1}].\n");
                 Rounds--;
 
@@ -139,6 +140,7 @@ public class RolarDado
             else
             {
                 Console.WriteLine($"\n{NomePLayer1} Tirou o número {P1NumeroDoDado}.\n{NomePLayer2} Tirou o número {P2NumeroDoDado}.\nPortanto, Round Empatado.");
+                    Console.WriteLine($"PLacar atual:[{PlacarP1}][{PlacarP2}]");
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
                     Console.ReadKey();
             }
@@ -183,6 +185,8 @@ class JogoDado
         int Auxiliar=game.JogoEmCondicaoNormal();
 
         game.Prorrogacao_E_Declaracao_De_Vitoria(Auxiliar);
+
+        Console.ReadKey();
 
     }
 }
