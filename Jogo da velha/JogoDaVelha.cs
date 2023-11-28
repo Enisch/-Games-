@@ -39,7 +39,8 @@ public class  ForcaJogo
                     JogoForcaSemSeparacao.Add(item2);
                 }
             }
-
+		/*Projeto não possui escalabilidade ainda.*/
+	    
             JogoForcaFilme.Add(JogoForcaSemSeparacao[0]);//Loop de 3 em 3
             JogoForcaFilme.Add(JogoForcaSemSeparacao[3]);
             JogoForcaFilme.Add(JogoForcaSemSeparacao[6]);
