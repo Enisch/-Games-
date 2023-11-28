@@ -113,7 +113,7 @@ public class  ForcaJogo
             Char C=Console.ReadKey().KeyChar;
 
             Console.WriteLine();
-
+            /*WHILE fará repetição enquanto houver letras do char do usuario contido na palavra.*/
             if(PalavraParaRemocao.Contains(char.ToLower(C)) || PalavraParaRemocao.Contains(char.ToUpper(C)))
             {
                 while(PalavraParaRemocao.Contains(char.ToLower(C)) || PalavraParaRemocao.Contains(char.ToUpper(C)))
